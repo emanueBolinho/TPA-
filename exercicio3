@@ -1,0 +1,22 @@
+using System ;
+class Program {
+public static void Main ( string [] args ) {
+int c;
+duplo [ , ] numeros = novo duplo [ 3 , 5 ];
+duplo [ ] somaNumeros = novo duplo [ 3 ];
+para ( c= 0 ; c < 3 ;c ++ ) {
+para ( int y = 0 ; y < 5 ; y ++ ) {
+Console . Limpar ();
+Console . Write ( $ " Insira o { y + 1 } ° valor da { x + 1 } ° linha: " );
+numeros [ c , y ] = duplo . Parse ( Console . ReadLine ());
+somaNumeros [ c ] + = numeros [ c , y ];
+}
+}
+Console . Limpar ();
+Console . WriteLine ( $ " A soma dos números da primeira linha é { somaNumeros [ 0 ]} \ n " );
+Console . WriteLine ( $ " A soma dos números da primeira linha é {
+somaNumeros [ 1 ]} \ n " );
+Console . WriteLine ( $ " A soma dos números da primeira linha é {
+somaNumeros [ 2 ]}  \ n ");
+}
+}
