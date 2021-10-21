@@ -1,0 +1,28 @@
+using System ;
+class Program {
+public static void Main ( string [] args ) {
+string [ ] nomes = nova string [ 10 ];
+duplo [ , ] notas = novo duplo [ 10 , 3 ];
+duplo [ ] mídias = novo duplo [ 10 ];
+para ( int j = 0 ; j < 10 ; j ++ ) {
+Console . Write ( $ " Digite o nome do { j + 1 } ° aluno: " );
+nomes [ j ] = Console . ReadLine ();
+para ( int p = 0 ; p < 3 ; p ++ ) {
+Console . Write ( $ " Digite a { p + 1 } ° nota: " ); notas [ j , p ] = duplo . Parse ( Console . ReadLine ());
+mídias [ j ] + = notas [ j , p ];
+}
+mídias [ j ] = mídias [ j ] / 3 ;
+Console . Limpar ();
+}
+Console . WriteLine ( " | NOME \ t | NOTAS \ t | MÉDIA \ n " );
+para ( int z = 0 ; z < 10 ; z ++ ) {
+if ( mídias [ z ] > = 7 ) {
+Console . ForegroundColor = ConsoleColor . Azul ;
+Console . WriteLine ( $ " { nomes [ z ]} \ t | 1 ° nota: { notas [ z , 0 ]} 2 ° nota: { notas [ z , 1 ]} 3 ° nota: { notas [ z , 2 ]} \ t | { mídias [ z ]} " ); Console . WriteLine ( "------------------------------------------ " );
+}
+else { Console . ForegroundColor = ConsoleColor . Vermelho ; Console . WriteLine ( $ " { nomes [ z ]} \ t | 1 ° nota: { notas [ z , 0 ]} 2 ° nota: { notas [ z , 1 ]} 3 ° nota: { notas [ z , 2 ]} \ t | { mídias [ z ]} " );
+Console . WriteLine ( "-------------------------------------- " );
+}
+}
+}
+}
